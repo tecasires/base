@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# Importamos la vista que hemos creado anteriormente.
+	
+from base.views import my_view
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Dentro del path añadimos:
+	path('vista/', my_view),   
 ]
