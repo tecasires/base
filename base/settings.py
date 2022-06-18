@@ -27,8 +27,19 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Definimos BASE_APPS, MY_APPS, THIRD_APPS e INSTALLED_APPS
+# Application definition
+"""
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+"""
 
+# Definimos BASE_APPS, MY_APPS, THIRD_APPS e INSTALLED_APPS
 BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,18 +54,6 @@ MY_APPS = []
 THIRD_APPS = []
 
 INSTALLED_APPS = BASE_APPS + MY_APPS + THIRD_APPS
-
-# Application definition
-"""
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
-"""
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,7 +70,8 @@ ROOT_URLCONF = 'base.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

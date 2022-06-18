@@ -17,12 +17,18 @@ from django.contrib import admin
 from django.urls import path
 
 # Importamos la vista que hemos creado anteriormente.
-	
 from base.views import my_view
+
+# Importamos el template que hemos creado anteriormente.
+from base.views import my_template
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Dentro del path añadimos:
-	path('vista/', my_view),   
+    # my_view
+	path('vista/', my_view),
+    # my_template
+    path('plantilla/', my_template),
+
 ]
