@@ -11,7 +11,7 @@ Proyecto realizado en DJANGO que sirve como esqueleto para el resto de proyectos
 	  vscode o pycharm
 
 # Descarga:
-	Desde una consola o el bash de git usar el siguiente comando
+	Desde una consola o el bash de git usar el siguiente comando:
 
 		git clone https://github.com/tecasir/base.git
 
