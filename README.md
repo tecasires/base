@@ -4,11 +4,11 @@ Proyecto realizado en DJANGO que sirve como esqueleto para el resto de proyectos
 # Requisitos previos:
 	Deberemos tener instalado y actualizado:
 	
-	  python3,
-	  GIT,
-	  pip,
-	  DJANGO,
-	  vscode o pycharm
+	    python3,
+	    GIT,
+	    pip,
+	    DJANGO,
+	    vscode o pycharm
 
 # Descarga:
 	Desde una consola o el bash de git usar el siguiente comando:
@@ -19,6 +19,7 @@ Proyecto realizado en DJANGO que sirve como esqueleto para el resto de proyectos
 # Instalación:
 	Deberemos ejejutar los siguientes comandos:
 
-		pip install -r requirements.txt
-		python manage.py migrate
-		python manage.py runserver
+		py.exe -m pip install --upgrade pip
+        pip install -r requirements.txt
+		py.exe manage.py migrate
+		py.exe manage.py runserver
