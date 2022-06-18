@@ -5,10 +5,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-# Definimos nuestra primera vista llamada my_view en la que le decimos que realizarnos un 'request' devuelva 'My view'
+# Definimos nuestra primera vista llamada 'my_view' en la que le decimos que al realizarnos un request devuelva el mensaje 'Esta es mi vista'.
 def my_view(request):
     return HttpResponse('Esta es mi vista')
 
-# from django.template import Template, Context
+# Definimos nuestra vista 'my_template' para ser cargada con el render.
 def my_template(request):
 	return render(request, "my_template.html", context = {})
+
+# Definimos nuestra vista 'index' para ser cargada con el render.
+def index(request):
+    return render(request, "index.html", context = {})
