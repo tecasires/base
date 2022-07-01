@@ -26,7 +26,7 @@ def pro_name():
                 print('\nCarácter', cha, 'no permitido.')
 
             else:
-                proj_name.append(cha)
+                proj_name.append(cha.lower())
 
         val_proj_name = "".join(proj_name)
         print('\nEl nombre del proyecto será: ', val_proj_name)

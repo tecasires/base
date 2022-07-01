@@ -22,7 +22,7 @@ def value_int():
         return value
 
 
-def vallue_flo():
+def value_flo():
     value = input('Introduzca un número decimal: ')
 
     try:
@@ -69,11 +69,11 @@ def value_dec():
     value_yes = ['SI', 'Si', 'si', 'SÍ', 'Sí', 'sí']
     value_no = ['NO', 'No', 'no']
     values = value_yes + value_no
-    value = input('Introduzca una decision (Sí / No): ')
+    value = input('Introduzca una respuesta (Sí / No): ')
 
     while value not in values:
-        print('¡Error!')
-        value = input('Introduzca una decision (Sí / No): ')
+        print('¡Error, introduzca una respuesta permitida!')
+        value = input('Introduzca una respuesta (Sí / No): ')
 
     if value in values:
 
